@@ -126,42 +126,49 @@ line-height: 90px;
 			
 			.car1 {
 background-image:url(images/car01.jpg);
+background-repeat:no-repeat;
 			}
 .car2 {
 background-image:url(images/car02.jpg);
+background-repeat:no-repeat;
 }
 
 .car3 {
 background-image:url(images/car03.jpg);
+background-repeat:no-repeat;
 }
 
 .car4 {
 background-image:url(images/car04.jpg);
+background-repeat:no-repeat;
 }
 
 .car5 {
 background-image:url(images/car05.jpg);
+background-repeat:no-repeat;
 }
 
 .car6 {
 background-image:url(images/car06.jpg);
+background-repeat:no-repeat;
 }
 
 .car7 {
 background-image:url(images/car07.jpg);
+background-repeat:no-repeat;
 }
 
 .car8 {
 background-image:url(images/car08.jpg);
+background-repeat:no-repeat;
 }
 
 .newtools {
 	background-image:url(images/hammer.gif);
-	background-position:center;
+	background-repeat:no-repeat;
 	}.hammer {
 }
 .wrench {
 	background-image:url(images/wrench.gif);
-	background-position:center;
-	background-size:contain;
+	background-repeat:no-repeat;
 }
