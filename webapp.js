@@ -3,6 +3,7 @@
 var money = 1000;
 var research = 1;
 var car_research_cost = 1000;
+var tool_research_cost = 1000;
 
 var time >= 0;
 var nk >= 0;
@@ -33,15 +34,15 @@ function research_car() {
 	}
 }
 
-/*function research_car() {
-	if(money >= research_cost) {
-		research = research + 0.1;
+function research_tool() {
+	if(money >= tool_research_cost) {
+		research = research + 0.01;
 		money -=research_cost;
-		research_cost *= 1.1;
+		tool_research_cost *= 1.01;
 		update();
 	}
 }
-*/
+
 
 // update the value stored in javascript onto the page.
 function update() {
@@ -52,7 +53,7 @@ function update() {
  
 window.onload = setInterval(generate, 5000);
 
-// COOKIE	
+// COOKIE	tool_
 
 function setCookie() {
     var exdays = 365;
@@ -62,6 +63,7 @@ function setCookie() {
     document.cookie = "money=" + money + ";" + expires;
     document.cookie = "research=" + research + ";" + expires;
 	document.cookie = "car_research_cost=" + car_research_cost + ";" + expires;
+	document.cookie = "tool_research_cost=" + tool_research_cost + ";" + expires;
 }
 
 function getCookie(cname) {
@@ -83,5 +85,6 @@ function loadCookies() {
 	money = Number(getCookie("money"));
 	research = Number(getCookie("research"));
 	car_research_cost = Number(getCookie("car_research_cost"));
+	tool_research_cost = Number(getCookie("tool_research_cost"));
 	update();
 }
